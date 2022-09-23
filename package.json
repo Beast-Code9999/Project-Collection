@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Beast-Code9999/Project-Collection/issues"
   },
-  "homepage": "https://github.com/Beast-Code9999/Project-Collection#readme"
+  "homepage": "https://github.com/Beast-Code9999/Project-Collection#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
 }
