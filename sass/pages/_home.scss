@@ -1,0 +1,25 @@
+.section-1 {
+    background-color: lightcyan;
+}
+
+.section-2 {
+    background-color: lightgoldenrodyellow;
+}
+
+.about {
+    &__pictures {
+        background-color: lightgray;
+    }
+
+    &__content {
+        background-color: lightgreen;
+    }
+}
+
+.projects {
+    background-color: lightgrey;    
+}
+
+.gallery {
+    background-color: lightpink;
+}
