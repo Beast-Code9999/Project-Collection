@@ -17,6 +17,9 @@ body {
   display: grid;
   grid-template-rows: 80vh auto 40vw repeat(3, auto);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+  .container > * {
+    padding: 4rem;
+    font-size: 4rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -44,29 +47,34 @@ body {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
 
-.footer {
-  background-color: lightsalmon; }
-
-.header {
-  background-color: lightcoral; }
-
-.qualities {
-  background-color: lightgoldenrodyellow; }
-
-.qualities-1 {
-  background-color: lightcyan; }
-
-.qualities-2 {
-  background-color: lightgoldenrodyellow; }
-
 .about__pictures {
-  background-color: lightgray; }
+  background-color: lightgray;
+  grid-column: full-start / col-end 4; }
 
 .about__content {
-  background-color: lightgreen; }
+  background-color: lightgreen;
+  grid-column: col-start 5 / full-end; }
 
-.projects {
-  background-color: lightgrey; }
+.footer {
+  background-color: lightsalmon;
+  grid-column: full-start / full-end; }
 
 .gallery {
-  background-color: lightpink; }
+  background-color: lightpink;
+  grid-column: full-start / full-end; }
+
+.header {
+  background-color: lightcoral;
+  grid-column: full-start / col-end 6; }
+
+.projects {
+  background-color: lightgrey;
+  grid-column: center-start / center-end; }
+
+.qualities {
+  background-color: lightgoldenrodyellow;
+  grid-column: center-start / center-end; }
+
+.quotes {
+  background-color: lightcyan;
+  grid-column: col-start 7 / full-end; }
