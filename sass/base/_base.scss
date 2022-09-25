@@ -19,4 +19,5 @@ body {
 .container {
     display: grid;
     grid-template-rows: 80vh auto 40vw repeat(3, auto);
+    grid-template-columns: 8rem 1fr repeat(8, minmax(auto, 14rem)) 1fr;
 }
