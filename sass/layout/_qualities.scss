@@ -3,9 +3,10 @@
     grid-column: center-start / center-end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
     // rows will be implicitely defined
+    margin: 15rem 0;
 
 
-    
 }
 
