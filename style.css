@@ -73,7 +73,9 @@ body {
 
 .qualities {
   background-color: lightgoldenrodyellow;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
 
 .quotes {
   background-color: lightcyan;
