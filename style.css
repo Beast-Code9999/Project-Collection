@@ -40,7 +40,9 @@ body {
   margin-top: 10rem !important; }
 
 .sidebar {
-  background-color: lightblue; }
+  background-color: lightblue;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
 
 .footer {
   background-color: lightsalmon; }
@@ -48,10 +50,10 @@ body {
 .header {
   background-color: lightcoral; }
 
-.section-1 {
+.qualities-1 {
   background-color: lightcyan; }
 
-.section-2 {
+.qualities-2 {
   background-color: lightgoldenrodyellow; }
 
 .about__pictures {
