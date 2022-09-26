@@ -42,18 +42,6 @@ body {
   .heading-4--dark {
     color: #54483A; }
 
-.btn {
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: none;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
-  cursor: pointer; }
-  .btn:hover {
-    background-color: #1b1b1b; }
-
 .u-center-text {
   text-align: center !important; }
 
@@ -74,6 +62,18 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #1b1b1b; }
 
 .sidebar {
   background-color: lightblue;

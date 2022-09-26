@@ -23,18 +23,3 @@
     &--light { color: $color-gray-light-1; }
     &--dark { color: $color-gray-dark-1; }
 }
-
-.btn {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: none;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    padding: 1rem 2rem;
-    cursor: pointer;
-
-    &:hover {
-        background-color: rgb(27, 27, 27);
-    }
-}
