@@ -5,13 +5,15 @@
 .heading-2 {
     font-size: 4rem;
     font-style: italic;
+    line-height: 1;
 
     &--light { color: $color-gray-light-1; }
     &--dark { color: $color-gray-dark-1; }
 }
 
 .heading-3 {
-    
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .heading-4 {
