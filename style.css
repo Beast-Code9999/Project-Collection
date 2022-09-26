@@ -80,12 +80,13 @@ body {
   grid-column: center-start / center-end; }
 
 .qualities {
-  background-color: lightgoldenrodyellow;
+  background-color: white;
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 4rem;
-  margin: 15rem 0; }
+  margin: 15rem 0;
+  align-items: start; }
 
 .quality {
   display: grid;
