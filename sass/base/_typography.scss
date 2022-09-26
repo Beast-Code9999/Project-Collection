@@ -1,3 +1,20 @@
-.heading-4 {
+.heading-1 {
+
+}
+
+.heading-2 {
     
+}
+
+.heading-3 {
+    
+}
+
+.heading-4 {
+    font-weight: 600;
+    font-size: 2rem;
+
+    &--light { color: $color-gray-light-1; }
+
+    &--dark { color: $color-gray-dark-1; }
 }

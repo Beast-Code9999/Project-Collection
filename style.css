@@ -21,6 +21,14 @@ body {
     padding: 4rem;
     font-size: 1.6rem; }
 
+.heading-4 {
+  font-weight: 600;
+  font-size: 2rem; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #54483A; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -79,17 +87,21 @@ body {
   grid-gap: 4rem;
   margin: 15rem 0; }
 
-.quality__img {
-  width: 5rem;
-  height: 5rem; }
-
-.quality__text {
-  font-size: 1.6rem; }
-
-.quality--title {
-  grid-column: 1 / -1;
-  margin: auto auto;
-  text-transform: uppercase; }
+.quality {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem; }
+  .quality__img {
+    width: 5rem;
+    height: 5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+  .quality__text {
+    font-size: 1.6rem; }
+  .quality--title {
+    grid-column: 1 / -1;
+    margin: auto auto;
+    text-transform: uppercase; }
 
 .quotes {
   background-color: lightcyan;
