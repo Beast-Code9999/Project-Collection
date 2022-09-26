@@ -8,6 +8,10 @@
         background-color: lightgreen;
         grid-column: col-start 5 / full-end;
         padding: 6rem 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
 
