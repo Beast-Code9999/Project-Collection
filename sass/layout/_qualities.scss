@@ -10,3 +10,13 @@
 
 }
 
+.quality {
+
+    &--title {
+        grid-column: 1 / -1;
+        margin: auto auto;
+        text-transform: uppercase;
+        
+    }
+}
+

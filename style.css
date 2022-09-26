@@ -79,6 +79,11 @@ body {
   grid-gap: 4rem;
   margin: 15rem 0; }
 
+.quality--title {
+  grid-column: 1 / -1;
+  margin: auto auto;
+  text-transform: uppercase; }
+
 .quotes {
   background-color: lightcyan;
   grid-column: col-start 7 / full-end; }
