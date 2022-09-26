@@ -79,6 +79,13 @@ body {
   grid-gap: 4rem;
   margin: 15rem 0; }
 
+.quality__img {
+  width: 5rem;
+  height: 5rem; }
+
+.quality__text {
+  font-size: 1.6rem; }
+
 .quality--title {
   grid-column: 1 / -1;
   margin: auto auto;

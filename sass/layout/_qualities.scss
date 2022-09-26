@@ -12,11 +12,20 @@
 
 .quality {
 
+    &__img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+    }
+
     &--title {
         grid-column: 1 / -1;
         margin: auto auto;
         text-transform: uppercase;
-        
+
     }
 }
 
