@@ -9,5 +9,17 @@
 }
 
 .project {
-    background-color: $color-gray-light-1
+    background-color: $color-gray-light-1;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__icon {
+
+    }
+
+    &__description {
+        
+    }
 }

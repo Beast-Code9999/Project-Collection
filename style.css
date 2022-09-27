@@ -133,6 +133,8 @@ body {
 
 .project {
   background-color: #f9f7f6; }
+  .project__img {
+    width: 100%; }
 
 .qualities {
   background-color: white;
