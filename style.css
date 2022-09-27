@@ -85,13 +85,19 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  align-items: center;
   padding: 0; }
 
 .about__img--1 {
-  width: 100%; }
+  width: 100%;
+  grid-column: 2 / 6;
+  grid-row: 2 / 6; }
 
 .about__img--2 {
-  width: 100%; }
+  width: 115%;
+  grid-row: 4 / 6;
+  grid-column: 4 / 7;
+  z-index: 10; }
 
 .about__content {
   background-color: lightgreen;

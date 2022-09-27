@@ -6,15 +6,22 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
+        align-items: center;
         padding: 0;
     }
 
     &__img--1 {
         width: 100%;
-    }
+        grid-column: 2 / 6;
+        grid-row: 2 / 6;
+        box-shadow: ;
+    } 
 
     &__img--2 {
-        width: 100%;
+        width: 115%;
+        grid-row: 4 / 6;
+        grid-column: 4 / 7;
+        z-index: 10;
         
     }
 
