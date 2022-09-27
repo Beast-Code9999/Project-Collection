@@ -4,6 +4,9 @@
         grid-column: full-start / col-end 4;
 
         display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 0;
     }
 
     &__img--1 {
@@ -12,6 +15,7 @@
 
     &__img--2 {
         width: 100%;
+        
     }
 
     &__content {
