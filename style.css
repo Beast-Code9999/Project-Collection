@@ -75,7 +75,17 @@ body {
     background-color: #28c9d5; }
 
 .btn-project {
-  grid-column: 1 / -1; }
+  height: 5rem;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  align-self: end;
+  border: none;
+  background-color: #26a5bc;
+  text-transform: uppercase;
+  color: white; }
+  .btn-project:hover {
+    cursor: pointer;
+    background-color: #28c9d5; }
 
 .sidebar {
   background-color: #26a5bc;
@@ -139,16 +149,41 @@ body {
   border: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto 5rem; }
+  position: relative; }
   .project__img {
     width: 100%;
     height: 25rem;
     border: none;
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    grid-row: 1/2; }
+  .project__icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem; }
   .project__name {
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 80%;
+    justify-self: center;
+    padding: 1.5rem;
+    background-color: #101d2c;
+    color: white;
+    font-weight: 500;
+    grid-row: 1 / 2;
+    align-self: end;
+    z-index: 10;
+    transform: translateY(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .project__description {
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: #54483A; }
 
 .qualities {
   background-color: white;

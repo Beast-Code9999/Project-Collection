@@ -15,5 +15,17 @@
 }
 
 .btn-project {
+    height: 5rem;
     grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    align-self: end;
+    border: none;
+    background-color: $color-primary;
+    text-transform: uppercase;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-primary-light;
+    }
 }
