@@ -6,6 +6,11 @@
     box-sizing: inherit;
 }
 
+*::selection {
+    background-color: orangered;
+    color: white;
+}
+
 html {
     font-size: 62.5%;
 }

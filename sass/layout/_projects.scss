@@ -63,6 +63,13 @@
         font-size: 1.2rem;
         color: $color-gray-dark-1;
     }
+
+    & a {
+        height: 5rem;
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        align-self: end;
+    }
 }
 
 
