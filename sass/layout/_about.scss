@@ -1,7 +1,17 @@
 .about {
     &__pictures {
         background-color: lightgray;
-        grid-column: full-start / col-end 4
+        grid-column: full-start / col-end 4;
+
+        display: grid;
+    }
+
+    &__img--1 {
+        width: 100%;
+    }
+
+    &__img--2 {
+        width: 100%;
     }
 
     &__content {
