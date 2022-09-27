@@ -1,5 +1,5 @@
 .btn {
-    background-color: black;
+    background-color: $color-primary;
     color: white;
     border: none;
     border-radius: none;
@@ -9,7 +9,7 @@
     cursor: pointer;
 
     &:hover {
-        background-color: rgb(27, 27, 27);
+        background-color: $color-primary-light;
     }
     
 }

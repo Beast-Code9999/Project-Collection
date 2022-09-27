@@ -1,4 +1,13 @@
 .projects {
+    margin: 10rem 0;
     background-color: lightgrey;    
     grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 7rem;
+}
+
+.project {
+    background-color: $color-gray-light-1
 }

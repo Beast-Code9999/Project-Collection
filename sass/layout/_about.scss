@@ -27,7 +27,7 @@
     }
 
     &__content {
-        background-color: lightgreen;
+        background-color: $color-gray-light-1;
         grid-column: col-start 5 / full-end;
         padding: 6rem 8vw;
         display: flex;

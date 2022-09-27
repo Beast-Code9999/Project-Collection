@@ -63,7 +63,7 @@ body {
   margin-top: 10rem !important; }
 
 .btn {
-  background-color: black;
+  background-color: #26a5bc;
   color: white;
   border: none;
   border-radius: none;
@@ -72,7 +72,7 @@ body {
   padding: 1rem 2rem;
   cursor: pointer; }
   .btn:hover {
-    background-color: #1b1b1b; }
+    background-color: #28c9d5; }
 
 .sidebar {
   background-color: #26a5bc;
@@ -103,7 +103,7 @@ body {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2); }
 
 .about__content {
-  background-color: lightgreen;
+  background-color: #f9f7f6;
   grid-column: col-start 5 / full-end;
   padding: 6rem 8vw;
   display: flex;
@@ -124,8 +124,15 @@ body {
   grid-column: full-start / col-end 6; }
 
 .projects {
+  margin: 10rem 0;
   background-color: lightgrey;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 7rem; }
+
+.project {
+  background-color: #f9f7f6; }
 
 .qualities {
   background-color: white;
