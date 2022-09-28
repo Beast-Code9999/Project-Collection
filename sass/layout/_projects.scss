@@ -34,20 +34,22 @@
 
     &__name {
         grid-column: 1 / -1;
-        font-size: 1.6rem;
-        text-align: center;
-        width: 80%;
-        justify-self: center;
-
-        padding: 1.5rem;
-        background-color: $color-secondary;
-        color: white;
-        font-weight: 500;
-
         grid-row: 1 / 2;
         align-self: end;
+        justify-self: center;
         z-index: 10;
+
+        width: 80%;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        
+        background-color: $color-secondary;
+        padding: 1.5rem;
+
         transform: translateY(50%);
+        text-transform: uppercase;
 
         display: flex;
         align-items: center;
