@@ -159,7 +159,11 @@ body {
   .project__icon {
     position: absolute;
     top: 2rem;
-    right: 2rem; }
+    right: 2rem;
+    transition: all .2s; }
+    .project__icon:hover {
+      cursor: pointer;
+      transform: scale(1.2); }
   .project__name {
     grid-column: 1 / -1;
     grid-row: 1 / 2;

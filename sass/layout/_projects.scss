@@ -30,6 +30,12 @@
         position: absolute;
         top: 2rem;
         right: 2rem;
+        transition: all .2s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
     }
 
     &__name {
