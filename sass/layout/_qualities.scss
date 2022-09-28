@@ -29,8 +29,11 @@
     &--title {
         grid-column: 1 / -1;
         margin: auto auto;
-        text-transform: uppercase;
 
+        height: 5rem;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: $color-gray-dark-1;
     }
 }
 

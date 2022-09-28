@@ -138,11 +138,20 @@ body {
 
 .projects {
   margin: 10rem 0;
-  background-color: lightgrey;
   grid-column: center-start / center-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 7rem; }
+  .projects__title {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #54483A;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .project {
   background-color: #f9f7f6;
@@ -218,7 +227,10 @@ body {
   .quality--title {
     grid-column: 1 / -1;
     margin: auto auto;
-    text-transform: uppercase; }
+    height: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #54483A; }
 
 .quotes {
   background-color: lightcyan;

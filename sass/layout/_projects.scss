@@ -1,11 +1,25 @@
 .projects {
     margin: 10rem 0;
-    background-color: lightgrey;    
     grid-column: center-start / center-end;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 7rem;
+
+    &__title {
+        grid-column: 1 / -1;
+
+        width: 100%;
+        height: 5rem;
+
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $color-gray-dark-1;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .project {
