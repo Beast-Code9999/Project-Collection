@@ -10,5 +10,10 @@
     width: 8rem;
     height: 100vh;
     position: fixed;
-    background-color: black;
+    background-color: gray;
+
+    &__list {
+        list-style: none;
+    }
+
 }
