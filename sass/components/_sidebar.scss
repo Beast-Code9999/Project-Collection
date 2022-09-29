@@ -11,9 +11,57 @@
     height: 100vh;
     position: fixed;
     background-color: gray;
+    transition: width .2s ease;
+
+
+
 
     &__list {
         list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        gap: 3rem;
+        padding: 3rem 0;
+
+
+    }
+
+    &__item {
+        padding-left: 1.5rem;
+        width: 100%;
+
+        &:last-child {
+            margin-top: auto;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        text-decoration: none;
+
+        & img {
+            width: 5rem;
+
+        }
+    }
+
+    &__text {
+        display: none;
+        margin-left: 5rem;
+    }
+
+    &:hover {
+        width: 26rem;
+    }
+
+    &:hover &__text {
+        display: block;
     }
 
 }

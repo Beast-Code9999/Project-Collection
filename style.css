@@ -100,9 +100,37 @@ body::-webkit-scrollbar-thumb {
   width: 8rem;
   height: 100vh;
   position: fixed;
-  background-color: gray; }
+  background-color: gray;
+  transition: width .2s ease; }
   .navbar__list {
-    list-style: none; }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+    padding: 3rem 0; }
+  .navbar__item {
+    padding-left: 1.5rem;
+    width: 100%; }
+    .navbar__item:last-child {
+      margin-top: auto; }
+  .navbar__link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none; }
+    .navbar__link img {
+      width: 5rem; }
+  .navbar__text {
+    display: none;
+    margin-left: 5rem; }
+  .navbar:hover {
+    width: 26rem; }
+  .navbar:hover .navbar__text {
+    display: block; }
 
 .about__pictures {
   background-color: lightgray;
