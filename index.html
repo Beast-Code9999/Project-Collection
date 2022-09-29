@@ -10,7 +10,21 @@
 </head>
 <body class="container">
     <div class="sidebar">
-        sidebar
+        <div class="navigation">
+            <input class="navigation__checkbox" type="checkbox" name="navigation" id="navigation-toggle">
+            <label class="navigation__label" for="navigation-toggle">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <div class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#qualities">Qualities <span>01</span></a></li>
+                    <li class="navigation__item"><a href="#about">About <span>02</span></a></li>
+                    <li class="navigation__item"><a href="#projects">Projects <span>03</span></a></li>
+                    <li class="navigation__item"><a href="#gallery">Gallery <span>04</span></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <header class="header">
@@ -21,7 +35,7 @@
         quotes
     </div>
 
-    <section class="qualities">
+    <section class="qualities" id="qualities">
         <div class="quality quality--title">
             Technologies I frequently use
         </div>
@@ -69,7 +83,7 @@
         </div> 
     </section>
 
-    <div class="about__pictures">
+    <div class="about__pictures" id="about">
         <img src="./img/abstract-gd04a4f26a_1280.jpg" alt="about__img--1" class="about__img--1">
         <img src="./img/circle-g7f3709873_1280.jpg" alt="about__img--2" class="about__img--2">
     </div>
@@ -87,7 +101,7 @@
         <button class="btn">download cv</button>
     </div>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projects__title">
             My Projects
         </div>
@@ -220,7 +234,7 @@
 
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <figure class="gallery__item gallery__item--1">
             <img src="./img/abstract-gd04a4f26a_1280.jpg" alt="gallery__img-1" class="gallery__img">
         </figure>
