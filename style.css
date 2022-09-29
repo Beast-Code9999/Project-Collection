@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   position: fixed;
   background-color: gray;
-  transition: width .2s ease; }
+  transition: width; }
   .navbar__list {
     list-style: none;
     padding: 0;
@@ -126,7 +126,10 @@ body::-webkit-scrollbar-thumb {
       width: 5rem; }
   .navbar__text {
     display: none;
-    margin-left: 5rem; }
+    margin-left: 3rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem; }
   .navbar:hover {
     width: 26rem; }
   .navbar:hover .navbar__text {
