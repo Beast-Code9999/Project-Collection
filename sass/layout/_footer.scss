@@ -21,13 +21,17 @@ footer {
   footer a {
     text-decoration: none;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   footer img {
     width: 3.5rem;
     height: auto;
     transition: transform .7s ease-in-out;
-    margin-left: 5px;
+    margin-left: 1rem;
+
   }
 
   footer img:hover {
