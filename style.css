@@ -96,6 +96,12 @@ body::-webkit-scrollbar-thumb {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
 
+.navbar {
+  width: 8rem;
+  height: 100vh;
+  position: fixed;
+  background-color: black; }
+
 .about__pictures {
   background-color: lightgray;
   grid-column: full-start / col-end 4;
