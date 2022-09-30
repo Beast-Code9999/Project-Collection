@@ -103,16 +103,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #2197ac;
   transition: width .2s ease,  display 2s 2s ease;
   z-index: 1000; }
-  .navbar__logo {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
-    width: 100%; }
-    .navbar__logo img {
-      width: 5rem; }
   .navbar__list {
     list-style: none;
     padding: 0;
@@ -121,7 +111,34 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding: 4rem 0; }
+    padding: 0 0 4rem 0; }
+  .navbar:hover .navbar__logo img {
+    transform: rotate(-180deg); }
+  .navbar:hover .navbar__logo span {
+    display: block; }
+  .navbar__logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    background-color: white;
+    padding: 2rem; }
+    .navbar__logo a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem; }
+    .navbar__logo span {
+      display: none;
+      text-decoration: none; }
+    .navbar__logo img {
+      width: 5rem;
+      transform: rotate(0deg);
+      transition: transform .2s; }
   .navbar__item {
     width: 100%;
     padding: 2rem 0;

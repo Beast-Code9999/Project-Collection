@@ -14,24 +14,6 @@
     transition: width .2s ease,  display 2s 2s ease;
     z-index: 1000;
 
-    &__logo {
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-        text-align: center;
-        font-size: 2rem;
-        letter-spacing: 0.3rem;
-        width: 100%;
-
-        & span {
-
-        }
-
-        & img {
-            width: 5rem;
-        }
-    }
-
 
     &__list {
         list-style: none;
@@ -41,7 +23,49 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        padding: 4rem 0;
+        padding: 0 0 4rem 0;
+
+    }
+
+    &:hover &__logo img {
+        transform: rotate(-180deg);
+    }
+
+    &:hover &__logo span {
+        display: block;
+    }
+
+
+    &__logo {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+        width: 100%;
+        background-color: white;
+        padding: 2rem;
+
+
+        & a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        & span {
+            display: none;
+            text-decoration: none;
+        }
+
+        & img {
+            width: 5rem;
+            transform: rotate(0deg);
+            transition: transform .2s;
+        }
 
     }
 
