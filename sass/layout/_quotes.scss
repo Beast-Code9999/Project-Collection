@@ -1,4 +1,15 @@
 .quotes {
-    background-color: lightcyan;
+    background-color: $color-secondary;
     grid-column: col-start 7 / full-end;
+
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        font-size: 2rem;
+        color: $color-primary;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }

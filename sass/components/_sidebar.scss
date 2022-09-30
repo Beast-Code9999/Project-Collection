@@ -10,10 +10,9 @@
     width: 8rem;
     height: 100vh;
     position: fixed;
-    background-color: black;
+    background-color: hsl(212, 47%, 15%);
 
     z-index: 1000;
-
 
     &__list {
         list-style: none;

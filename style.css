@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
   width: 8rem;
   height: 100vh;
   position: fixed;
-  background-color: black;
+  background-color: #142538;
   z-index: 1000; }
   .navbar__list {
     list-style: none;
@@ -312,7 +312,7 @@ footer img:hover {
   grid-column: full-start / col-end 6;
   height: 100%;
   background-size: cover;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.5)), url(/img/pexels-anni-roenkae-2693212.jpg);
+  background-image: linear-gradient(to bottom, rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.8)), url(/img/pexels-francesco-ungaro-96381.jpg);
   padding: 4rem 8rem;
   display: flex;
   flex-direction: column; }
@@ -463,8 +463,16 @@ footer img:hover {
     color: #54483A; }
 
 .quotes {
-  background-color: lightcyan;
-  grid-column: col-start 7 / full-end; }
+  background-color: #101d2c;
+  grid-column: col-start 7 / full-end;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column; }
+  .quotes__heading {
+    font-size: 2rem;
+    color: #26a5bc;
+    text-transform: uppercase;
+    text-align: center; }
 
 .container {
   display: grid;
