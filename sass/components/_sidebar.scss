@@ -30,7 +30,7 @@
     }
 
     &__item {
-        padding-left: 1.5rem;
+        padding-left: 2rem;
         width: 100%;
 
         &:last-child {
@@ -46,7 +46,7 @@
         transition: all .2s;
         
         & img {
-            width: 5rem;
+            width: 4rem;
             filter: invert(85%) sepia(10%) saturate(17%) hue-rotate(315deg) brightness(79%) contrast(93%);
         }
 

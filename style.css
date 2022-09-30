@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb {
     gap: 3rem;
     padding: 3rem 0; }
   .navbar__item {
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     width: 100%; }
     .navbar__item:last-child {
       margin-top: auto; }
@@ -125,7 +125,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     transition: all .2s; }
     .navbar__link img {
-      width: 5rem;
+      width: 4rem;
       filter: invert(85%) sepia(10%) saturate(17%) hue-rotate(315deg) brightness(79%) contrast(93%); }
     .navbar__link:hover {
       filter: invert(61%) sepia(98%) saturate(358%) hue-rotate(143deg) brightness(76%) contrast(93%); }
