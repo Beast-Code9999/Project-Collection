@@ -10,7 +10,7 @@
     width: 8rem;
     height: 100vh;
     position: fixed;
-    background-color: rgb(0, 14, 31);
+    background-color: rgb(0, 55, 59);
     transition: width .2s ease,  display 2s 2s ease;
     z-index: 1000;
 
@@ -24,14 +24,36 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        gap: 3rem;
-        padding: 3rem 0;
+        padding: 4rem 0;
 
     }
 
     &__item {
-        padding-left: 2rem;
         width: 100%;
+        padding: 2rem 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 1rem;
+            background-color: rgb(31, 0, 0);
+            // transform-origin: center or botoom or top
+
+            //animation
+            transform: scaleY(0);
+            transition: transform .2s,
+                        width .4s cubic-bezier( 1, 0, 0, 1 ) .2s;
+            z-index: 1500;
+        }
+
+        &:hover::after {
+            transform: scaleY(1);
+            width: 100%;
+        }
 
         &:last-child {
             margin-top: auto;
@@ -44,6 +66,9 @@
         height: 5rem;
         text-decoration: none;
         transition: all .2s;
+        margin-left: 2rem;
+        position: relative;
+        z-index: 2000;
         
         & img {
             width: 4rem;

@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
   width: 8rem;
   height: 100vh;
   position: fixed;
-  background-color: #000e1f;
+  background-color: #00373b;
   transition: width .2s ease,  display 2s 2s ease;
   z-index: 1000; }
   .navbar__list {
@@ -111,11 +111,25 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    gap: 3rem;
-    padding: 3rem 0; }
+    padding: 4rem 0; }
   .navbar__item {
-    padding-left: 2rem;
-    width: 100%; }
+    width: 100%;
+    padding: 2rem 0;
+    position: relative; }
+    .navbar__item::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 1rem;
+      background-color: #1f0000;
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+      z-index: 1500; }
+    .navbar__item:hover::after {
+      transform: scaleY(1);
+      width: 100%; }
     .navbar__item:last-child {
       margin-top: auto; }
   .navbar__link {
@@ -123,7 +137,10 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     height: 5rem;
     text-decoration: none;
-    transition: all .2s; }
+    transition: all .2s;
+    margin-left: 2rem;
+    position: relative;
+    z-index: 2000; }
     .navbar__link img {
       width: 4rem;
       filter: invert(85%) sepia(10%) saturate(17%) hue-rotate(315deg) brightness(79%) contrast(93%); }
