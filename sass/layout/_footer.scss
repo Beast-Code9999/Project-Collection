@@ -1,5 +1,6 @@
 .footer {
     grid-column: full-start / full-end;
+    text-transform: uppercase;
 }
 
 
@@ -24,6 +25,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
   }
 
   footer img {

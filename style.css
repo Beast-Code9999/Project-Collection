@@ -221,7 +221,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.4rem; }
 
 .footer {
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  text-transform: uppercase; }
 
 .footer {
   background-color: #101d2c; }
@@ -240,7 +241,8 @@ footer a {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-weight: 700; }
 
 footer img {
   width: 3.5rem;
