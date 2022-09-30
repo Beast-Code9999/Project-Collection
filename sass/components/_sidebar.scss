@@ -14,6 +14,23 @@
     transition: width .2s ease,  display 2s 2s ease;
     z-index: 1000;
 
+    &__logo {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+        width: 100%;
+
+        & span {
+
+        }
+
+        & img {
+            width: 5rem;
+        }
+    }
 
 
     &__list {

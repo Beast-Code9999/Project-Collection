@@ -103,6 +103,16 @@ body::-webkit-scrollbar-thumb {
   background-color: #2197ac;
   transition: width .2s ease,  display 2s 2s ease;
   z-index: 1000; }
+  .navbar__logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    width: 100%; }
+    .navbar__logo img {
+      width: 5rem; }
   .navbar__list {
     list-style: none;
     padding: 0;
