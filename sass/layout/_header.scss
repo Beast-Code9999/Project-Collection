@@ -1,7 +1,10 @@
 .header {
-    background-color: lightcoral;
     grid-column: full-start / col-end 6;
-
+    background-size: cover;
+    background-image: linear-gradient(rgba($color-secondary, .5), rgba($color-secondary, .5)), url(/img/pexels-anni-roenkae-2693212.jpg);
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
 
     &__logo {
 
@@ -10,7 +13,7 @@
     &__heading {
         
         &--4 {
-
+            font-size: 2rem;
         }
 
         &--2 {
@@ -18,7 +21,19 @@
         }
 
         &--3 {
-            
+
         }
+    }
+
+    &__button {
+        width: 25rem;
+    }
+
+    &__line {
+
+    }
+
+    &__techonology {
+
     }
 }

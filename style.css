@@ -309,8 +309,16 @@ footer img:hover {
     display: block; }
 
 .header {
-  background-color: lightcoral;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  background-size: cover;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.5)), url(/img/pexels-anni-roenkae-2693212.jpg);
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column; }
+  .header__heading--4 {
+    font-size: 2rem; }
+  .header__button {
+    width: 25rem; }
 
 .projects {
   margin: 10rem 0;
