@@ -1,10 +1,12 @@
 .header {
     grid-column: full-start / col-end 6;
+    height: 100%;
     background-size: cover;
     background-image: linear-gradient(rgba($color-secondary, .5), rgba($color-secondary, .5)), url(/img/pexels-anni-roenkae-2693212.jpg);
     padding: 4rem 8rem;
     display: flex;
     flex-direction: column;
+
 
     &__logo {
         width: 10rem;
@@ -16,6 +18,7 @@
         &--4 {
             font-size: 2rem;
             color: $color-primary;
+            margin-bottom: -2rem;
         }
 
         &--2 {
@@ -26,6 +29,7 @@
         &--3 {
             color: white;
             font-size: 3rem;
+            margin-top: -1rem;
 
             & span {
                 color: $color-primary;
@@ -36,13 +40,28 @@
 
     &__button {
         width: 25rem;
+        font-size: 2rem;
+        border-radius: 2rem;
+        transition: all .1s;
+
+        &:hover {
+            transform: translateY(-1rem);
+            background-color: $color-primary;
+        }
     }
 
     &__line {
 
     }
 
-    &__techonology {
+    &__technology {
+        width: 100%;
+        justify-self: flex-end;
+        display: flex;
+        justify-content: space-evenly;
 
+        & img {
+            width: 3rem;
+        }
     }
 }
