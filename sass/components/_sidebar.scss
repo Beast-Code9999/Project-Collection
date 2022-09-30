@@ -10,8 +10,8 @@
     width: 8rem;
     height: 100vh;
     position: fixed;
-    background-color: $color-primary-dark;
-    transition: width .2s ease,  display 2s 2s ease;
+    background-color: black;
+
     z-index: 1000;
 
 
@@ -35,36 +35,37 @@
         display: block;
     }
 
-
     &__logo {
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 2rem;
         text-align: center;
         font-size: 2rem;
         letter-spacing: 0.3rem;
         width: 100%;
-        background-color: white;
+        background-color: $color-secondary;
         padding: 2rem;
-
 
         & a {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1rem;
+            gap: 1.5rem;
+            text-decoration: none;
+
         }
 
         & span {
             display: none;
-            text-decoration: none;
+            color: white;
+
         }
 
         & img {
             width: 5rem;
             transform: rotate(0deg);
             transition: transform .2s;
+            filter: invert(99%) sepia(26%) saturate(0%) hue-rotate(243deg) brightness(114%) contrast(100%);
         }
 
     }

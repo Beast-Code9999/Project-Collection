@@ -100,8 +100,7 @@ body::-webkit-scrollbar-thumb {
   width: 8rem;
   height: 100vh;
   position: fixed;
-  background-color: #2197ac;
-  transition: width .2s ease,  display 2s 2s ease;
+  background-color: black;
   z-index: 1000; }
   .navbar__list {
     list-style: none;
@@ -119,26 +118,27 @@ body::-webkit-scrollbar-thumb {
   .navbar__logo {
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
     letter-spacing: 0.3rem;
     width: 100%;
-    background-color: white;
+    background-color: #101d2c;
     padding: 2rem; }
     .navbar__logo a {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem; }
+      gap: 1.5rem;
+      text-decoration: none; }
     .navbar__logo span {
       display: none;
-      text-decoration: none; }
+      color: white; }
     .navbar__logo img {
       width: 5rem;
       transform: rotate(0deg);
-      transition: transform .2s; }
+      transition: transform .2s;
+      filter: invert(99%) sepia(26%) saturate(0%) hue-rotate(243deg) brightness(114%) contrast(100%); }
   .navbar__item {
     width: 100%;
     padding: 2rem 0;
