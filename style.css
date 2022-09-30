@@ -199,7 +199,8 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   grid-column: 2 / 6;
   grid-row: 2 / 6;
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
+  filter: invert(8%) sepia(95%) saturate(285%) hue-rotate(171deg) brightness(77%) contrast(94%); }
 
 .about__img--2 {
   width: 115%;
@@ -467,12 +468,26 @@ footer img:hover {
   grid-column: col-start 7 / full-end;
   padding: 4rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   .quotes__heading {
     font-size: 2rem;
     color: #26a5bc;
     text-transform: uppercase;
     text-align: center; }
+  .quotes__container {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center; }
+  .quotes__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%; }
+  .quotes__text {
+    color: #aaa;
+    font-size: 1.2rem; }
 
 .container {
   display: grid;

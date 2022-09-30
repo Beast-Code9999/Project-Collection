@@ -16,7 +16,7 @@
         grid-column: 2 / 6;
         grid-row: 2 / 6;
         box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: .1);
-        
+        filter: invert(8%) sepia(95%) saturate(285%) hue-rotate(171deg) brightness(77%) contrast(94%);
     } 
 
     &__img--2 {
