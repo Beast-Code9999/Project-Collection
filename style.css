@@ -315,6 +315,9 @@ footer img:hover {
   padding: 4rem 8rem;
   display: flex;
   flex-direction: column; }
+  .header__logo {
+    width: 10rem;
+    margin: 0 auto; }
   .header__heading--4 {
     font-size: 2rem; }
   .header__button {
