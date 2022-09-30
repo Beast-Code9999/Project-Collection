@@ -78,7 +78,7 @@ body::-webkit-scrollbar-thumb {
   padding: 1rem 2rem;
   cursor: pointer; }
   .btn:hover {
-    background-color: #28c9d5; }
+    background-color: #00eeff; }
 
 .btn-project {
   width: 100%;
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
   color: white; }
   .btn-project:hover {
     cursor: pointer;
-    background-color: #28c9d5; }
+    background-color: #00eeff; }
 
 .sidebar {
   background-color: #26a5bc;
@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
   width: 8rem;
   height: 100vh;
   position: fixed;
-  background-color: #00373b;
+  background-color: #2197ac;
   transition: width .2s ease,  display 2s 2s ease;
   z-index: 1000; }
   .navbar__list {
@@ -122,8 +122,8 @@ body::-webkit-scrollbar-thumb {
       right: 0;
       top: 0;
       height: 100%;
-      width: 1rem;
-      background-color: #1f0000;
+      width: .5rem;
+      background-color: #101d2c;
       transform: scaleY(0);
       transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
       z-index: 1500; }
@@ -137,15 +137,15 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     height: 5rem;
     text-decoration: none;
-    transition: all .2s;
+    transition: all .7s;
     margin-left: 2rem;
     position: relative;
     z-index: 2000; }
     .navbar__link img {
       width: 4rem;
-      filter: invert(85%) sepia(10%) saturate(17%) hue-rotate(315deg) brightness(79%) contrast(93%); }
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); }
     .navbar__link:hover {
-      filter: invert(61%) sepia(98%) saturate(358%) hue-rotate(143deg) brightness(76%) contrast(93%); }
+      filter: invert(76%) sepia(32%) saturate(1681%) hue-rotate(156deg) brightness(210%) contrast(102%); }
   .navbar__text {
     display: none;
     margin-left: 3rem;

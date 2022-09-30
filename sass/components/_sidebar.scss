@@ -10,7 +10,7 @@
     width: 8rem;
     height: 100vh;
     position: fixed;
-    background-color: rgb(0, 55, 59);
+    background-color: $color-primary-dark;
     transition: width .2s ease,  display 2s 2s ease;
     z-index: 1000;
 
@@ -39,8 +39,8 @@
             right: 0;
             top: 0;
             height: 100%;
-            width: 1rem;
-            background-color: rgb(31, 0, 0);
+            width: .5rem;
+            background-color: $color-secondary;
             // transform-origin: center or botoom or top
 
             //animation
@@ -65,18 +65,18 @@
         align-items: center;
         height: 5rem;
         text-decoration: none;
-        transition: all .2s;
+        transition: all .7s;
         margin-left: 2rem;
         position: relative;
         z-index: 2000;
         
         & img {
             width: 4rem;
-            filter: invert(85%) sepia(10%) saturate(17%) hue-rotate(315deg) brightness(79%) contrast(93%);
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
         }
 
         &:hover {
-            filter: invert(61%) sepia(98%) saturate(358%) hue-rotate(143deg) brightness(76%) contrast(93%);
+            filter: invert(76%) sepia(32%) saturate(1681%) hue-rotate(156deg) brightness(210%) contrast(102%);
         }
     }
 
