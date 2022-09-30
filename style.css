@@ -339,12 +339,24 @@ footer img:hover {
     transition: all .1s; }
     .header__button:hover {
       transform: translateY(-1rem);
-      background-color: #26a5bc; }
+      background-color: #26a5bc;
+      cursor: pointer; }
   .header__line {
     text-align: center;
     color: #aaa;
     font-size: 1.5rem;
-    font-weight: 800; }
+    font-weight: 800;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; }
+    .header__line::before, .header__line::after {
+      content: "";
+      width: 35%;
+      height: .2rem;
+      background-color: #aaa;
+      display: block; }
   .header__technology {
     width: 100%;
     justify-self: flex-end;
