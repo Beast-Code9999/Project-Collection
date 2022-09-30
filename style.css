@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
   width: 8rem;
   height: 100vh;
   position: fixed;
-  background-color: gray;
+  background-color: #000e1f;
   transition: width .2s ease,  display 2s 2s ease;
   z-index: 1000; }
   .navbar__list {
@@ -115,24 +115,27 @@ body::-webkit-scrollbar-thumb {
     padding: 3rem 0; }
   .navbar__item {
     padding-left: 1.5rem;
-    width: 100%;
-    filter: grayscale(100%) opacity(0.6); }
+    width: 100%; }
     .navbar__item:last-child {
       margin-top: auto; }
   .navbar__link {
     display: flex;
     align-items: center;
     height: 5rem;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all .2s; }
     .navbar__link img {
       width: 5rem;
-      filter: grayscale(100%); }
+      filter: invert(85%) sepia(10%) saturate(17%) hue-rotate(315deg) brightness(79%) contrast(93%); }
+    .navbar__link:hover {
+      filter: invert(61%) sepia(98%) saturate(358%) hue-rotate(143deg) brightness(76%) contrast(93%); }
   .navbar__text {
     display: none;
     margin-left: 3rem;
     text-transform: uppercase;
     color: white;
-    font-size: 2rem; }
+    font-size: 1.5rem;
+    font-weight: 700; }
   .navbar:hover {
     width: 26rem; }
   .navbar:hover .navbar__text {

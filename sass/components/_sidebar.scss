@@ -10,7 +10,7 @@
     width: 8rem;
     height: 100vh;
     position: fixed;
-    background-color: gray;
+    background-color: rgb(0, 14, 31);
     transition: width .2s ease,  display 2s 2s ease;
     z-index: 1000;
 
@@ -32,35 +32,40 @@
     &__item {
         padding-left: 1.5rem;
         width: 100%;
-        filter: grayscale(100%) opacity(0.6);
 
         &:last-child {
             margin-top: auto;
         }
     }
-
+    
     &__link {
         display: flex;
         align-items: center;
         height: 5rem;
         text-decoration: none;
-
+        transition: all .2s;
+        
         & img {
             width: 5rem;
-            filter: grayscale(100%);
+            filter: invert(85%) sepia(10%) saturate(17%) hue-rotate(315deg) brightness(79%) contrast(93%);
+        }
 
+        &:hover {
+            filter: invert(61%) sepia(98%) saturate(358%) hue-rotate(143deg) brightness(76%) contrast(93%);
         }
     }
+
+
 
     &__text {
         display: none;
         margin-left: 3rem;
         text-transform: uppercase;
         color: white;
-        font-size: 2rem;
-
-
+        font-size: 1.5rem;
+        font-weight: 700;
     }
+
 
     &:hover {
         width: 26rem;
@@ -69,5 +74,6 @@
     &:hover &__text {
         display: block;
     }
+
 
 }
