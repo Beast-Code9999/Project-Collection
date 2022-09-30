@@ -101,7 +101,8 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   position: fixed;
   background-color: gray;
-  transition: width; }
+  transition: width .2s ease,  display 2s 2s ease;
+  z-index: 1000; }
   .navbar__list {
     list-style: none;
     padding: 0;
@@ -114,7 +115,8 @@ body::-webkit-scrollbar-thumb {
     padding: 3rem 0; }
   .navbar__item {
     padding-left: 1.5rem;
-    width: 100%; }
+    width: 100%;
+    filter: grayscale(100%) opacity(0.6); }
     .navbar__item:last-child {
       margin-top: auto; }
   .navbar__link {
@@ -123,7 +125,8 @@ body::-webkit-scrollbar-thumb {
     height: 5rem;
     text-decoration: none; }
     .navbar__link img {
-      width: 5rem; }
+      width: 5rem;
+      filter: grayscale(100%); }
   .navbar__text {
     display: none;
     margin-left: 3rem;

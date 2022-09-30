@@ -11,8 +11,8 @@
     height: 100vh;
     position: fixed;
     background-color: gray;
-    transition: width;
-
+    transition: width .2s ease,  display 2s 2s ease;
+    z-index: 1000;
 
 
 
@@ -27,12 +27,12 @@
         gap: 3rem;
         padding: 3rem 0;
 
-
     }
 
     &__item {
         padding-left: 1.5rem;
         width: 100%;
+        filter: grayscale(100%) opacity(0.6);
 
         &:last-child {
             margin-top: auto;
@@ -47,6 +47,7 @@
 
         & img {
             width: 5rem;
+            filter: grayscale(100%);
 
         }
     }
@@ -57,6 +58,8 @@
         text-transform: uppercase;
         color: white;
         font-size: 2rem;
+
+
     }
 
     &:hover {
