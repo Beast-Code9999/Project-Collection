@@ -340,13 +340,19 @@ footer img:hover {
     .header__button:hover {
       transform: translateY(-1rem);
       background-color: #26a5bc; }
+  .header__line {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: 800; }
   .header__technology {
     width: 100%;
     justify-self: flex-end;
     display: flex;
     justify-content: space-evenly; }
     .header__technology img {
-      width: 3rem; }
+      width: 5rem;
+      filter: invert(80%) sepia(0%) saturate(5%) hue-rotate(143deg) brightness(91%) contrast(89%); }
 
 .projects {
   margin: 10rem 0;
