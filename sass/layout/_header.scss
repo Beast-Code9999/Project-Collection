@@ -15,15 +15,23 @@
         
         &--4 {
             font-size: 2rem;
+            color: $color-primary;
         }
 
         &--2 {
-
+            font-size: 5rem;
+            color: white;
         }
 
         &--3 {
+            color: white;
+            font-size: 3rem;
 
+            & span {
+                color: $color-primary;
+            }
         }
+
     }
 
     &__button {

@@ -319,7 +319,16 @@ footer img:hover {
     width: 10rem;
     margin: 0 auto; }
   .header__heading--4 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    color: #26a5bc; }
+  .header__heading--2 {
+    font-size: 5rem;
+    color: white; }
+  .header__heading--3 {
+    color: white;
+    font-size: 3rem; }
+    .header__heading--3 span {
+      color: #26a5bc; }
   .header__button {
     width: 25rem; }
 
