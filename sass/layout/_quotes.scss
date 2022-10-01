@@ -34,9 +34,10 @@
     &__img-container {
         width: 5rem;
         height: 5rem;
-        // border-radius: 50%;
+        border-radius: 50%;
+        background-image: url(/quote-img/640px-Mark-manson-headshot-2018-1.jpg);
+        background-size: contain;
 
-        background-color: white;
     }
 
 

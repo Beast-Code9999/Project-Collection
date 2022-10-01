@@ -488,7 +488,9 @@ footer img:hover {
   .quotes__img-container {
     width: 5rem;
     height: 5rem;
-    background-color: white; }
+    border-radius: 50%;
+    background-image: url(/quote-img/640px-Mark-manson-headshot-2018-1.jpg);
+    background-size: contain; }
   .quotes__text {
     color: #aaa;
     font-size: 1.2rem; }
