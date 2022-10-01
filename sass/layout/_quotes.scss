@@ -35,8 +35,19 @@
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
-        background-image: url(/quote-img/640px-Mark-manson-headshot-2018-1.jpg);
         background-size: contain;
+
+        &--einstein {
+            background-image: url(/quote-img/download.jpg);
+        }
+
+        &--jonathan {
+            background-image: url(/quote-img/Jonathan_Haidt_2012_03.jpg);
+        }
+
+        &--mark {
+            background-image: url(/quote-img/640px-Mark-manson-headshot-2018-1.jpg);
+        }
 
     }
 

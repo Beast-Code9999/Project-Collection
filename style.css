@@ -489,8 +489,13 @@ footer img:hover {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-image: url(/quote-img/640px-Mark-manson-headshot-2018-1.jpg);
     background-size: contain; }
+    .quotes__img-container--einstein {
+      background-image: url(/quote-img/download.jpg); }
+    .quotes__img-container--jonathan {
+      background-image: url(/quote-img/Jonathan_Haidt_2012_03.jpg); }
+    .quotes__img-container--mark {
+      background-image: url(/quote-img/640px-Mark-manson-headshot-2018-1.jpg); }
   .quotes__text {
     color: #aaa;
     font-size: 1.2rem; }
