@@ -479,7 +479,7 @@ footer img:hover {
     text-align: center; }
   .quotes__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center; }
     .quotes__container p {
       width: 70%;

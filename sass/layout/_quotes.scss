@@ -19,7 +19,7 @@
     &__container {
         display: flex;
         // gap: 5rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
 
         & p {
