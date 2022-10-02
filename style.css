@@ -482,7 +482,11 @@ footer img:hover {
     justify-content: space-between;
     align-items: center; }
     .quotes__container p {
-      width: 70%; }
+      width: 70%;
+      font-size: 1.2rem; }
+      .quotes__container p span {
+        color: white;
+        font-size: 1.4rem; }
     .quotes__container div {
       width: 5rem; }
   .quotes__img-container {
