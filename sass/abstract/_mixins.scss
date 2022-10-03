@@ -5,6 +5,9 @@
     @if $breakpoint == 1000 {
         @media ( max-width: 62.5em ) { @content };
     }
+    @if $breakpoint == 800 {
+        @media ( max-width: 50em ) { @content };
+    }
 
 
     @if $breakpoint == "1000-min" {

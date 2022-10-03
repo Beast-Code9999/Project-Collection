@@ -231,11 +231,16 @@ body::-webkit-scrollbar-thumb {
   background-color: lightgray;
   grid-column: full-start / col-end 4;
   background-image: linear-gradient(rgba(38, 165, 188, 0.5), rgba(38, 165, 188, 0.5)), url(/img/pexels-anni-roenkae-2693212.jpg);
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   align-items: center;
   padding: 0; }
+  @media (max-width: 50em) {
+    .about__pictures {
+      grid-column: 1 / -1;
+      padding: 6rem; } }
 
 .about__img--1 {
   width: 100%;
@@ -243,6 +248,11 @@ body::-webkit-scrollbar-thumb {
   grid-row: 2 / 6;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
   filter: invert(8%) sepia(95%) saturate(285%) hue-rotate(171deg) brightness(77%) contrast(94%); }
+  @media (max-width: 50em) {
+    .about__img--1 {
+      grid-column: 1 / 5;
+      grid-row: 1 / -1;
+      width: 100%; } }
 
 .about__img--2 {
   width: 115%;
@@ -251,6 +261,10 @@ body::-webkit-scrollbar-thumb {
   z-index: 10;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
   border: 2rem solid #f9f7f6; }
+  @media (max-width: 50em) {
+    .about__img--2 {
+      width: 100%;
+      grid-row: 1 / -1; } }
 
 .about__content {
   background-color: #f9f7f6;
@@ -260,6 +274,10 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; }
+  @media (max-width: 50em) {
+    .about__content {
+      grid-column: 1 / -1;
+      grid-row: 4 / 5; } }
 
 .about__text {
   font-size: 1.4rem; }

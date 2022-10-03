@@ -3,12 +3,18 @@
         background-color: lightgray;
         grid-column: full-start / col-end 4;
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(/img/pexels-anni-roenkae-2693212.jpg);
+        background-size: cover;
 
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
         align-items: center;
         padding: 0;
+
+        @include responsive( 800 ) {
+            grid-column: 1 / -1;
+            padding: 6rem;
+        }
     }
 
     &__img--1 {
@@ -18,6 +24,12 @@
         box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: .1);
         filter: invert(8%) sepia(95%) saturate(285%) hue-rotate(171deg) brightness(77%) contrast(94%);
         // transform: rotateZ(-20deg);
+        
+        @include responsive( 800 ) {
+            grid-column: 1 / 5;   
+            grid-row: 1 / -1;
+            width: 100%;
+        }
     }
 
     &__img--2 {
@@ -29,6 +41,10 @@
         // transform: rotateZ(-4deg);
         border: 2rem solid $color-gray-light-1;
   
+        @include responsive( 800 ) {
+            width: 100%;   
+            grid-row: 1 / -1;
+        }
     }
 
     &__content {
@@ -39,6 +55,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        @include responsive( 800 ) {
+            grid-column: 1 / -1;   
+            grid-row: 4 / 5;
+        }
     }
 
     &__text {
