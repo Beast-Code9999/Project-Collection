@@ -207,7 +207,8 @@ body::-webkit-scrollbar-thumb {
   grid-row: 3 / 6;
   grid-column: 4 / 7;
   z-index: 10;
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  border: 2rem solid #f9f7f6; }
 
 .about__content {
   background-color: #f9f7f6;
