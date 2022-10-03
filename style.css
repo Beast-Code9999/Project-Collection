@@ -612,6 +612,9 @@ footer img:hover {
     @media (max-width: 62.5em) {
       .quotes__heading {
         display: none; } }
+    @media (max-width: 50em) {
+      .quotes__heading {
+        display: inline-block; } }
   .quotes__container {
     display: flex;
     justify-content: space-evenly;

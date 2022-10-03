@@ -25,7 +25,10 @@
         text-align: center;
 
         @include responsive( 1000 ) {
-             display: none;
+            display: none;
+        }
+        @include responsive( 800 ) {
+            display: inline-block;
         }
     }
 
