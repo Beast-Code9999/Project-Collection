@@ -9,11 +9,20 @@
     justify-content: center;
     gap: 2rem;
 
+    @include responsive( 1000 ) {
+        grid-column: 1 / -1;       
+        flex-direction: row;
+    }
+
     &__heading {
         font-size: 2rem;
         color: $color-primary;
         text-transform: uppercase;
         text-align: center;
+
+        @include responsive( 1000 ) {
+             display: none;
+        }
     }
 
     &__container {
@@ -21,6 +30,10 @@
         // gap: 5rem;
         justify-content: space-evenly;
         align-items: center;
+
+        @include responsive( 1000 ) {
+            width: 33.3333%;   
+        }
 
         & p {
             width: 70%;

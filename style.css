@@ -542,15 +542,25 @@ footer img:hover {
   align-items: center;
   justify-content: center;
   gap: 2rem; }
+  @media (max-width: 62.5em) {
+    .quotes {
+      grid-column: 1 / -1;
+      flex-direction: row; } }
   .quotes__heading {
     font-size: 2rem;
     color: #26a5bc;
     text-transform: uppercase;
     text-align: center; }
+    @media (max-width: 62.5em) {
+      .quotes__heading {
+        display: none; } }
   .quotes__container {
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
+    @media (max-width: 62.5em) {
+      .quotes__container {
+        width: 33.3333%; } }
     .quotes__container p {
       width: 70%;
       font-size: 1.2rem; }
