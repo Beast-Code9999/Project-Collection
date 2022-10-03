@@ -248,6 +248,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 62.5em) {
+    footer {
+      padding-bottom: 16rem; } }
 
 footer a {
   text-decoration: none;

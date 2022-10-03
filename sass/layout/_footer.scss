@@ -1,22 +1,28 @@
 .footer {
     grid-column: full-start / full-end;
     text-transform: uppercase;
-}
 
-
-.footer {
+    
+  }
+  
+  
+  .footer {
     background-color: $color-secondary;
-}
-
-footer {
+  }
+  
+  footer {
     padding: 8rem;
     text-align: center;
     font-size: 3rem;
     color: white;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include responsive( 1000 ) {
+        padding-bottom: 16rem;
+    }
   }
 
   footer a {
