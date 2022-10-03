@@ -363,22 +363,39 @@ footer img:hover {
   padding: 4rem 8rem;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 62.5em) {
+    .header {
+      grid-column: 1 / -1;
+      padding: 8rem; } }
   .header__logo {
     width: 10rem;
     margin: 0 auto; }
+    @media (max-width: 62.5em) {
+      .header__logo {
+        width: 12rem; } }
   .header__heading--4 {
     font-size: 2rem;
     color: #26a5bc;
     margin-bottom: -2rem; }
+    @media (max-width: 62.5em) {
+      .header__heading--4 {
+        font-size: 3rem;
+        margin-top: auto; } }
   .header__heading--2 {
     font-size: 5rem;
     color: white; }
+    @media (max-width: 62.5em) {
+      .header__heading--2 {
+        font-size: 9rem; } }
   .header__heading--3 {
     color: white;
     font-size: 3rem;
     margin-top: -1rem; }
     .header__heading--3 span {
       color: #26a5bc; }
+    @media (max-width: 62.5em) {
+      .header__heading--3 {
+        font-size: 4rem; } }
   .header__button {
     width: 25rem;
     font-size: 2rem;
@@ -388,6 +405,10 @@ footer img:hover {
       transform: translateY(-1rem);
       background-color: #26a5bc;
       cursor: pointer; }
+    @media (max-width: 62.5em) {
+      .header__button {
+        width: 40rem;
+        font-size: 3rem; } }
   .header__line {
     text-align: center;
     color: #aaa;
@@ -404,6 +425,9 @@ footer img:hover {
       height: .2rem;
       background-color: #aaa;
       display: block; }
+    @media (max-width: 62.5em) {
+      .header__line {
+        margin-top: auto; } }
   .header__technology {
     width: 100%;
     justify-self: flex-end;

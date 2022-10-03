@@ -7,10 +7,20 @@
     display: flex;
     flex-direction: column;
 
+    @include responsive( 1000 ) {
+        grid-column: 1 / -1;
+        padding: 8rem;
+
+    }
+
 
     &__logo {
         width: 10rem;
         margin: 0 auto;
+
+        @include responsive( 1000 ) {
+            width: 12rem;   
+        }
     }
 
     &__heading {
@@ -19,11 +29,20 @@
             font-size: 2rem;
             color: $color-primary;
             margin-bottom: -2rem;
+
+            @include responsive( 1000 ) {
+                font-size: 3rem;
+                margin-top: auto;
+            }
         }
 
         &--2 {
             font-size: 5rem;
             color: white;
+
+            @include responsive( 1000 ) {
+                font-size: 9rem;
+            }
         }
 
         &--3 {
@@ -33,6 +52,10 @@
 
             & span {
                 color: $color-primary;
+            }
+
+            @include responsive( 1000 ) {
+                font-size: 4rem;
             }
         }
 
@@ -49,6 +72,11 @@
             transform: translateY(-1rem);
             background-color: $color-primary;
             cursor: pointer;
+        }
+
+        @include responsive( 1000 ) {
+            width: 40rem;
+            font-size: 3rem;
         }
     }
 
@@ -70,6 +98,10 @@
             background-color: #aaa;
             display: block;
         }
+
+        @include responsive( 1000 ) {
+            margin-top: auto;   
+        }
     }
 
     &__technology {
@@ -82,5 +114,7 @@
             width: 5rem;
             filter: invert(80%) sepia(0%) saturate(5%) hue-rotate(143deg) brightness(91%) contrast(89%);
         }
+
+
     }
 }
