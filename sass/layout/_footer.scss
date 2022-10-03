@@ -1,15 +1,9 @@
 .footer {
     grid-column: full-start / full-end;
     text-transform: uppercase;
-
-    
-  }
-  
-  
-  .footer {
     background-color: $color-secondary;
   }
-  
+
   footer {
     padding: 8rem;
     text-align: center;
@@ -22,6 +16,11 @@
 
     @include responsive( 1000 ) {
         padding-bottom: 16rem;
+    }
+
+    @include responsive( 600 ) {
+        padding: 6rem 6rem 12rem 6rem;
+        font-size: 1.5rem;
     }
   }
 
