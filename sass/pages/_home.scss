@@ -3,4 +3,9 @@
     display: grid;
     grid-template-rows: 80vh auto 40vw repeat(3, auto);
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end];
+
+    @include responsive( 1000 ) {
+        grid-template-rows: 80vh auto 40vw repeat(3, auto);
+        grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end];
+    }
 }

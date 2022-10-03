@@ -2,4 +2,7 @@
     @if $breakpoint == 1300 {
         @media ( max-width: 81.25em ) { @content };
     }
+    @if $breakpoint == 1000 {
+        @media ( max-width: 62.5em ) { @content };
+    }
 }

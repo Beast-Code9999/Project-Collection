@@ -13,6 +13,10 @@
 
 html {
     font-size: 62.5%;
+
+    @include responsive( 1300 ) {
+        font-size: 50%;
+    }
 }
 
 body {

@@ -3,6 +3,14 @@
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
 
+    @include responsive( 1000 ) {
+        position: fixed;
+        bottom: 0;
+        height: 8rem;
+        width: 100vw;
+        background-color: red;
+        z-index: 4000;
+    }
 
 }
 
@@ -11,8 +19,9 @@
     height: 100vh;
     position: fixed;
     background-color: hsl(212, 47%, 15%);
-
     z-index: 1000;
+
+
 
     &__list {
         list-style: none;

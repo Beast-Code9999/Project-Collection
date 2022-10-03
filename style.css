@@ -11,6 +11,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 81.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -95,6 +98,14 @@ body::-webkit-scrollbar-thumb {
   background-color: #26a5bc;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
+  @media (max-width: 62.5em) {
+    .sidebar {
+      position: fixed;
+      bottom: 0;
+      height: 8rem;
+      width: 100vw;
+      background-color: red;
+      z-index: 4000; } }
 
 .navbar {
   width: 8rem;
@@ -442,7 +453,7 @@ footer img:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 4rem;
-  margin: 15rem 0;
+  margin: 15rem 5rem;
   align-items: start; }
 
 .quality {
@@ -509,3 +520,7 @@ footer img:hover {
   display: grid;
   grid-template-rows: 80vh auto 40vw repeat(3, auto);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+  @media (max-width: 62.5em) {
+    .container {
+      grid-template-rows: 80vh auto 40vw repeat(3, auto);
+      grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end]; } }
