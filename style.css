@@ -104,7 +104,6 @@ body::-webkit-scrollbar-thumb {
       bottom: 0;
       height: 8rem;
       width: 100vw;
-      background-color: red;
       z-index: 4000; } }
 
 .navbar {
@@ -557,5 +556,5 @@ footer img:hover {
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end]; }
   @media (max-width: 62.5em) {
     .container {
-      grid-template-rows: 80vh auto 40vw repeat(3, auto);
+      grid-template-rows: calc(100vh - 8rem) auto auto 40vw repeat(3, auto);
       grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end]; } }
