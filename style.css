@@ -474,6 +474,15 @@ footer img:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 7rem; }
+  @media (max-width: 37.5em) {
+    .projects {
+      justify-items: center;
+      gap: 1rem; } }
+  @media (max-width: 31.25em) {
+    .projects {
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      grid-gap: 3rem; } }
   .projects__title {
     grid-column: 1 / -1;
     width: 100%;
@@ -484,6 +493,9 @@ footer img:hover {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media (max-width: 37.5em) {
+      .projects__title {
+        margin-bottom: 4rem; } }
 
 .project {
   background-color: #f9f7f6;
@@ -491,6 +503,12 @@ footer img:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .project {
+      width: 80%; } }
+  @media (max-width: 31.25em) {
+    .project {
+      width: 70%; } }
   .project__img {
     width: 100%;
     height: 25rem;

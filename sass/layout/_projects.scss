@@ -6,6 +6,18 @@
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 7rem;
 
+
+    @include responsive( 600 ) {
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    @include responsive( 500 ) {
+        justify-items: center;   
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-gap: 3rem;
+    }
+
     &__title {
         grid-column: 1 / -1;
 
@@ -19,7 +31,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+
+        @include responsive( 600 ) {
+            margin-bottom: 4rem;
+        }
+    }   
 }
 
 .project {
@@ -28,9 +44,16 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 
     position: relative;
+
+    @include responsive( 600 ) {
+        width: 80%;   
+    }
+
+    @include responsive( 500 ) {
+        width: 70%;
+    }
 
     &__img {
         width: 100%;
