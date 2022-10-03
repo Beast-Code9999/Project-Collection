@@ -14,6 +14,10 @@
         flex-direction: row;
     }
 
+    @include responsive( 800 ) {
+        flex-direction: column;       
+    }
+
     &__heading {
         font-size: 2rem;
         color: $color-primary;
@@ -33,6 +37,11 @@
 
         @include responsive( 1000 ) {
             width: 33.3333%;   
+        }
+
+        @include responsive( 800 ) {
+            width: 75%;   
+            margin-bottom: 3rem;
         }
 
         & p {

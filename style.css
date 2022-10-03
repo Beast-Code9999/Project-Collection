@@ -564,6 +564,9 @@ footer img:hover {
     .quotes {
       grid-column: 1 / -1;
       flex-direction: row; } }
+  @media (max-width: 50em) {
+    .quotes {
+      flex-direction: column; } }
   .quotes__heading {
     font-size: 2rem;
     color: #26a5bc;
@@ -579,6 +582,10 @@ footer img:hover {
     @media (max-width: 62.5em) {
       .quotes__container {
         width: 33.3333%; } }
+    @media (max-width: 50em) {
+      .quotes__container {
+        width: 75%;
+        margin-bottom: 3rem; } }
     .quotes__container p {
       width: 70%;
       font-size: 1.2rem; }
