@@ -21,6 +21,11 @@
     background-color: hsl(212, 47%, 15%);
     z-index: 1000;
 
+    @include responsive( 1000 ) {
+        height: 8rem;
+        width: 100%;
+        z-index: 5000;
+    }
 
 
     &__list {
@@ -32,6 +37,13 @@
         align-items: center;
         height: 100%;
         padding: 0 0 4rem 0;
+
+        @include responsive( 1000 ) {
+            width: 100%;
+            height: 100%;
+            flex-direction: row;
+            padding: 0;
+        }    
 
     }
 
@@ -52,6 +64,11 @@
         width: 100%;
         background-color: $color-secondary;
         padding: 2rem;
+
+        @include responsive( 1000 ) {
+            display: none;
+        }
+    
 
         & a {
             width: 100%;
@@ -83,6 +100,16 @@
         padding: 2rem 0;
         position: relative;
 
+        @include responsive( 1000 ) {
+            width: 25%;
+            height: 100%;
+            padding: 0;   
+
+            display: flex;         
+            justify-content: center;
+            align-items: center;
+        }
+
         &::after {
             content: "";
             position: absolute;
@@ -100,14 +127,18 @@
             z-index: 1500;
         }
 
-        &:hover::after {
-            transform: scaleY(1);
-            width: 100%;
+        @include responsive( "1000-min" ) {
+            
+            &:hover::after {
+                transform: scaleY(1);
+                width: 100%;
+            }
+    
+            &:last-child {
+                margin-top: auto;
+            }
         }
 
-        &:last-child {
-            margin-top: auto;
-        }
     }
     
     &__link {
@@ -120,6 +151,12 @@
         position: relative;
         z-index: 2000;
         
+        @include responsive( 1000 ) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         & img {
             width: 4rem;
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
@@ -128,6 +165,14 @@
         &:hover {
             filter: invert(76%) sepia(32%) saturate(1681%) hue-rotate(156deg) brightness(210%) contrast(102%);
         }
+
+        & span {
+            
+            @include responsive( 1000 ) {
+                display: none;
+            }
+        }
+
     }
 
 
@@ -142,13 +187,14 @@
     }
 
 
-    &:hover {
-        width: 26rem;
+    @include responsive( "1000-min" ) {
+        &:hover {
+            width: 26rem;
+        }
+
+
+        &:hover &__text {
+            display: block;
+        }
     }
-
-    &:hover &__text {
-        display: block;
-    }
-
-
 }
