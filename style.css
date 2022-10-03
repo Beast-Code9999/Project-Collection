@@ -627,11 +627,10 @@ footer img:hover {
         width: 75%;
         margin-bottom: 3rem; } }
     .quotes__container p {
-      width: 70%;
-      font-size: 1.2rem; }
+      width: 70%; }
       .quotes__container p span {
         color: white;
-        font-size: 1.4rem; }
+        font-size: 1.6rem; }
     .quotes__container div {
       width: 5rem; }
   .quotes__img-container {
@@ -647,7 +646,7 @@ footer img:hover {
       background-image: url(/quote-img/640px-Mark-manson-headshot-2018-1.jpg); }
   .quotes__text {
     color: #aaa;
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
 
 .container {
   display: grid;
