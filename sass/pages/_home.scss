@@ -12,4 +12,9 @@
     @include responsive( 800 ) {
         grid-template-rows: calc(100vh - 8rem); // everything after row 1 is set to auto or min-content
     }
+
+    @include responsive( "500-height") {
+        grid-template-rows: 150vh;
+
+    }
 }

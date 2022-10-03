@@ -659,3 +659,6 @@ footer img:hover {
   @media (max-width: 50em) {
     .container {
       grid-template-rows: calc(100vh - 8rem); } }
+  @media (max-height: 31.25em) {
+    .container {
+      grid-template-rows: 150vh; } }

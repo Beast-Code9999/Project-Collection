@@ -1,4 +1,7 @@
 @mixin responsive( $breakpoint ) {
+
+    // max
+    // width
     @if $breakpoint == 1300 {
         @media ( max-width: 81.25em ) { @content };
     }
@@ -14,8 +17,14 @@
     @if $breakpoint == 500 {
         @media ( max-width: 31.25em) { @content };
     }
+    // height
+    @if $breakpoint == "500-height" {
+        @media ( max-height: 31.25em ) { @content };
+    }
 
 
+
+    // min
     @if $breakpoint == "1000-min" {
         @media ( min-width: 62.5em ) { @content };
     }
