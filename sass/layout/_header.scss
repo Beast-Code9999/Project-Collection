@@ -34,6 +34,10 @@
                 font-size: 3rem;
                 margin-top: auto;
             }
+            
+            @include responsive( 600 ) {
+                font-size: 2rem;
+            }
         }
 
         &--2 {
@@ -42,6 +46,10 @@
 
             @include responsive( 1000 ) {
                 font-size: 9rem;
+            }
+
+            @include responsive( 600 ) {
+                font-size: 6rem;   
             }
         }
 
@@ -56,6 +64,9 @@
 
             @include responsive( 1000 ) {
                 font-size: 4rem;
+            }
+            @include responsive( 600 ) {
+                font-size: 3rem;   
             }
         }
 
@@ -77,6 +88,11 @@
         @include responsive( 1000 ) {
             width: 40rem;
             font-size: 3rem;
+        }
+
+        @include responsive( 600 ) {
+            width: auto;
+            font-size: 2rem;
         }
     }
 

@@ -8,4 +8,8 @@
         grid-template-rows: calc(100vh - 8rem) auto auto 40vw repeat(3, auto);
         grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end];
     }
+
+    @include responsive( 800 ) {
+        grid-template-rows: calc(100vh - 8rem); // everything after row 1 is set to auto or min-content
+    }
 }

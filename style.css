@@ -399,12 +399,18 @@ footer img:hover {
       .header__heading--4 {
         font-size: 3rem;
         margin-top: auto; } }
+    @media (max-width: 37.5em) {
+      .header__heading--4 {
+        font-size: 2rem; } }
   .header__heading--2 {
     font-size: 5rem;
     color: white; }
     @media (max-width: 62.5em) {
       .header__heading--2 {
         font-size: 9rem; } }
+    @media (max-width: 37.5em) {
+      .header__heading--2 {
+        font-size: 6rem; } }
   .header__heading--3 {
     color: white;
     font-size: 3rem;
@@ -414,6 +420,9 @@ footer img:hover {
     @media (max-width: 62.5em) {
       .header__heading--3 {
         font-size: 4rem; } }
+    @media (max-width: 37.5em) {
+      .header__heading--3 {
+        font-size: 3rem; } }
   .header__button {
     width: 25rem;
     font-size: 2rem;
@@ -427,6 +436,10 @@ footer img:hover {
       .header__button {
         width: 40rem;
         font-size: 3rem; } }
+    @media (max-width: 37.5em) {
+      .header__button {
+        width: auto;
+        font-size: 2rem; } }
   .header__line {
     text-align: center;
     color: #aaa;
@@ -617,3 +630,6 @@ footer img:hover {
     .container {
       grid-template-rows: calc(100vh - 8rem) auto auto 40vw repeat(3, auto);
       grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] 1fr [full-end]; } }
+  @media (max-width: 50em) {
+    .container {
+      grid-template-rows: calc(100vh - 8rem); } }
