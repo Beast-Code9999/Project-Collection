@@ -1,7 +1,7 @@
 # Project-Collection
 
 Dates: 
-  - September 2022: Date created
+  - October 2022: Date created
 
 First version of project collection page
 
